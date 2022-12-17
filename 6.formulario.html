@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FUT</title>
+</head>
+<body>
+    <header>*****UNIVERSIDAD NACIONAL FEDERICO VILLARREAL*****</header>
+    <h2>FORMULARIO UNICO DE TRAMITE</h2>
+    <hr>
+    <form action ="" >
+        <fieldset>
+            <legend>Datos del estudiante</legend>
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" name="name" placeholder="ingrese su nombre"><br><br>
+
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" name="pass" placeholder="ingrese su password" required><br><br>
+
+            <label for="correo">Correo</label><br>
+            <input type="email" id="correo" name="correo" placeholder="ingrese su correo" required><br><br>
+
+            <label for="birtday">Fecha</label><br>
+            <input type="date" id="birtday" name="fecha" placeholder="ingrese su fecha de nacimiento"><br><br>
+            
+           <label for="escuela">Escuela profesional</label><br>
+           <select name="escuela" id="escuela">
+            <option value="is">Ingenieria de sistemas</option>
+            <option value="ii">Ingenieria industrial</option>
+            <option value="it">Ingenieria de transportes</option>
+            <option value="ig">Ingenieria geografica</option>
+           </select><br><br>
+            
+        </fieldset>
+        <fieldset>
+           <legend>Seleccione el tramite que desea realizar:</legend> 
+           <input type="radio" id="mat" name="tramite" value="mat">
+           <label for="mat">Matricula</label><br>
+
+           <input type="radio" id="rec" name="tramite" value="rec">
+           <label for="rec">Rectificacion de matricula</label><br>
+
+           <input type="radio" id="rm" name="tramite" value="rm">
+           <label for="rm">Reserva de matricula</label><br><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Selecione los documentos a presentar:</legend>
+            <input type="checkbox" id="sol" name="sol" value="sol">
+            <label for="sol">boleta de notas</label><br>
+
+            <input type="checkbox" id="bp" name="bol" value="bol">
+            <label for="bp">boleta de pago</label><br>
+
+            <input type="checkbox" id="hr" name="horario" value="horario">
+            <label for="hr">horarios</label><br>
+        </fieldset>
+
+        <label for="text">Sustenta brevemente tu solicitud</label><br>
+        <textarea name="text" id="text" cols="30" rows="5"></textarea><br><br>
+        
+        <label for="doc">Suba sus documentos</label><br>
+        <input type="file" id="doc" name="documentos"><br><br>
+
+        <br><input type="submit"><br>
+        <br><input type="reset">
+    </form>
+</body>
+</html>
